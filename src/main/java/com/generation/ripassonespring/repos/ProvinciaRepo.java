@@ -1,4 +1,8 @@
 package com.generation.ripassonespring.repos;
 
-public interface ProvinciaRepo {
+import com.generation.ripassonespring.model.Provincia;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProvinciaRepo extends JpaRepository<Provincia,Long>
+{
 }
