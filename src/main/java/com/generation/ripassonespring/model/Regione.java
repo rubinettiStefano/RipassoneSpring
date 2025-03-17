@@ -1,5 +1,6 @@
 package com.generation.ripassonespring.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;
@@ -16,6 +17,7 @@ public class Regione
 
 	private String nome, areaGeografica;
 
+	@JsonIgnore
 	@OneToMany(mappedBy = "regione",fetch = FetchType.EAGER)
 	private List<Provincia> provincias = new ArrayList<>();
 
