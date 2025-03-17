@@ -3,7 +3,7 @@ package com.generation.ripassonespring.model;
 import jakarta.persistence.*;
 
 import java.util.StringJoiner;
-
+//modifica da sito
 @Entity
 public class Provincia
 {
